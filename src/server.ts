@@ -5,6 +5,7 @@ import { uploadVideoRoute } from './routes/upload-video'
 const app = fastify()
 
 app.register(getAllPromptsRoute)
+
 app.register(uploadVideoRoute)
 
 app.listen({
