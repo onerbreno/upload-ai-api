@@ -23,3 +23,15 @@ Content-Type: application/json
 {
   "prompt": "tecnologia, progresso"
 }
+
+###
+
+# @name generate-ai-completion
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "e7bdb338-8039-4b26-82a0-bd10ca5da052",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do vídeo informado a seguir: '''{transcription}'''"
+}
